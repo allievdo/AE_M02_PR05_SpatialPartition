@@ -90,7 +90,7 @@ namespace SpatialPartitionPattern
             int cellZ = (int)(soldier.soldierTrans.position.z / cellSize);
 
             //if it didnt change cell, were done\
-            if (oldCellX == cellX && oldCellZ == cellZ && oldCellY == cellY)
+            if (oldCellX == cellX && oldCellY == cellY && oldCellZ == cellZ)
             {
                 return;
             }
