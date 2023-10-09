@@ -42,7 +42,7 @@ namespace SpatialPartitionPattern
             {
                 //Give the enemy a random position
                 //CHANGED
-                Vector3 randomPos = new Vector3(Random.Range(0f, mapWidth), Random.Range(0f, mapWidth), Random.Range(0f, mapWidth));
+                Vector3 randomPos = new Vector3(Random.Range(0f, mapWidth), Random.Range(0.5f, mapWidth), Random.Range(0f, mapWidth));
 
                 //create a new enemy
                 GameObject newEnemy = Instantiate(enemyObj, randomPos, Quaternion.identity) as GameObject;
@@ -55,7 +55,7 @@ namespace SpatialPartitionPattern
 
                 //give teh friendky a random position
                 //CHANGED
-                randomPos = new Vector3(Random.Range(0f, mapWidth), Random.Range(0f, mapWidth), Random.Range(0f, mapWidth));
+                randomPos = new Vector3(Random.Range(0f, mapWidth), Random.Range(0.5f, mapWidth), Random.Range(0f, mapWidth));
 
                 //Create a new friendly
                 GameObject newFriendly = Instantiate(friendlyObj, randomPos, Quaternion.identity) as GameObject;
@@ -125,7 +125,7 @@ namespace SpatialPartitionPattern
             for (int i = 0; i < numberOfSoldiers; i++)
             {
                 //Give the enemy a random position
-                Vector3 randomPos = new Vector3(Random.Range(0f, mapWidth), Random.Range(0f, mapWidth), Random.Range(0f, mapWidth));
+                Vector3 randomPos = new Vector3(Random.Range(0f, mapWidth), Random.Range(0.5f, mapWidth), Random.Range(0f, mapWidth));
 
                 //create a new enemy
                 GameObject newEnemy = Instantiate(enemyObj, randomPos, Quaternion.identity) as GameObject;
@@ -137,7 +137,7 @@ namespace SpatialPartitionPattern
                 newEnemy.transform.parent = enemyParent;
 
                 //give the friendly a random position
-                randomPos = new Vector3(Random.Range(0f, mapWidth), Random.Range(0f, mapWidth), Random.Range(0f, mapWidth));
+                randomPos = new Vector3(Random.Range(0f, mapWidth), Random.Range(0.5f, mapWidth), Random.Range(0f, mapWidth));
 
                 //Create a new friendly
                 GameObject newFriendly = Instantiate(friendlyObj, randomPos, Quaternion.identity) as GameObject;

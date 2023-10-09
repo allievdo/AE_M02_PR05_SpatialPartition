@@ -59,7 +59,7 @@ namespace SpatialPartitionPattern
 
         void GetNewTarget()
         {
-            currentTarget = new Vector3(Random.Range(0f, mapWidth), 0.5f, Random.Range(0f, mapWidth));
+            currentTarget = new Vector3(Random.Range(0f, mapWidth), Random.Range(0f, mapWidth), Random.Range(0f, mapWidth));
 
             //Rotate toward the target
             soldierTrans.rotation = Quaternion.LookRotation(currentTarget - soldierTrans.position);

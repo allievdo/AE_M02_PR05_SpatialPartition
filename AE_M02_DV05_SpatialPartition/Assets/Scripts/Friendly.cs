@@ -11,7 +11,7 @@ namespace SpatialPartitionPattern
         {
             this.soldierTrans = soldierObj.transform;
 
-            this.walkSpeed = 2f;
+            this.walkSpeed = 3f;
         }
 
         public override void Move(Soldier closestEnemy)
